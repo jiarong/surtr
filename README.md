@@ -20,6 +20,7 @@ cd ..
 bash scripts/surtr.sh
 
 ####run with test data
+####it takes several mins for bwa to index refs if ran the first time
 bash scripts/surtr.sh db/rrna.fasta test/2k.fa test/2k.test.out/
 
 ####to see the output files
