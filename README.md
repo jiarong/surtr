@@ -5,6 +5,8 @@ rrna search in shotgun metagenome
 
 Brief instructions:
 ---------------------
+
+```bash
 git clone git@github.com:jiarong/surtr.git
 cd surtr
 ls
@@ -22,6 +24,7 @@ bash scripts/surtr.sh db/rrna.fasta test/2k.fa test/2k.test.out/
 
 ####to see the output files
 ls test/2k.test.out/
+```
 
 Existing problems
 -----------------
