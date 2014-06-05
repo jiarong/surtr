@@ -24,3 +24,50 @@ Stats of the run:
 surtr finished
 
 
+Thu Jun  5 16:24:09 EDT 2014
+start surtr
+[E::bwa_idx_load] fail to locate the index files
+
+PARAMETERS:
+ - kmer size =    21 		(-k)
+ - n tables =     4 		(-N)
+ - min tablesize = 1e+08 	(-x)
+
+Estimated memory usage is 5e+07 bytes (n_tables x min_tablesize / 8)
+--------
+loading input reads from /home/gjr/dev/rna/surtr/db/rrna.fasta
+fp rate estimated to be 0.013
+starting sweep.
+... 0 0
+Stats of the run:
+27994.4 seqs per second
+4.5 Mbps per second
+close failed in file object destructor:
+sys.excepthook is missing
+lost sys.stderr
+Thu Jun  5 16:35:49 EDT 2014
+start surtr
+
+PARAMETERS:
+ - kmer size =    21 		(-k)
+ - n tables =     4 		(-N)
+ - min tablesize = 1e+08 	(-x)
+
+Estimated memory usage is 5e+07 bytes (n_tables x min_tablesize / 8)
+--------
+fp rate estimated to be 0.000
+starting sweep.
+... 0 0
+Stats of the run:
+27640.7 seqs per second
+4.4 Mbps per second
+[M::main_mem] read 21 sequences (3048 bp)...
+[M::mem_process_seqs] Processed 21 reads in 0.014 CPU sec, 0.013 real sec
+[main] Version: 0.7.8-r455
+[main] CMD: /home/gjr/dev/rna/surtr/bin/bwa mem -t 1 -c 10000000 db/rrna.fasta -
+[main] Real time: 0.632 sec; CPU: 0.305 sec
+                               
+                               
+surtr finished
+
+

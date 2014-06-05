@@ -5,14 +5,15 @@
 set -e
 set -o pipefail 
 
-if [ $# -ne 2 ]
+if [ $# -ne 3 ]
 then
-  echo "Usage: $(basename $0) <seqfile> <outdir>"
+  echo "Usage: $(basename $0) <ref> <seqfile> <outdir>"
   exit 1
 fi
 
-Seq=$1
-Outdir=$2
+Ref=$1
+Seq=$2
+Outdir=$3
 
 
 #Prefix=5M
@@ -25,14 +26,17 @@ Scriptpath=$( cd "$(dirname "$0")" && pwd -P )
 Binpath=$( cd "$(dirname "$0")" && cd ../bin && pwd -P ) 
 Dbpath=$( cd "$(dirname "$0")" && cd ../db && pwd -P ) 
 Libpath=$( cd "$(dirname "$0")" && cd ../lib && pwd -P ) 
-echo $Libpath
-echo aaaa
 
-Ref=$Dbpath/rrna.fasta
+#Ref=$Dbpath/rrna.fasta
 
 export PYTHONPATH=$Libpath:$PYTHONPATH
 
 #python -c "import khmer; print 'khmer version: {}'.format(khmer.__version__)"
+
+if [ ! -f $Ref.bwt ];
+then
+  $Binpath/bwa index $Ref
+fi
 
 mkdir -p $Outdir
 date|tee -a $Log
