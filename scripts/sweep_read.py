@@ -11,7 +11,6 @@ Use '-h' for parameter help.
 
 import sys
 import khmer
-import numpy
 import os.path
 import time
 import screed
