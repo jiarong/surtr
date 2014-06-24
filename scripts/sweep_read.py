@@ -101,9 +101,10 @@ def main():
         if n % 1000000 == 0:
             print >> sys.stderr, '... %d %d' %(n, m)
 
-        count = ht.get_percentile_count(record.sequence, perc)
+        #count = ht.get_percentile_count(record.sequence, perc)
+        count = ht.get_median_count(record.sequence)[1]
 
-        if count:
+        if count > args.kmer_identity/100.0:
             m += 1
             outfp.write('>%s\n%s\n' % (record.name, record.sequence))
         else:
