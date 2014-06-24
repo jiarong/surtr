@@ -5,6 +5,10 @@ rrna search in shotgun metagenome
 
 Brief instructions:
 ---------------------
+###Dependencies:
+- khmer
+- screed
+- bwa
 
 ```bash
 git clone git@github.com:jiarong/surtr.git

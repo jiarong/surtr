@@ -35,7 +35,8 @@ export PYTHONPATH=$Libpath:$PYTHONPATH
 
 if [ ! -f $Ref.bwt ];
 then
-  $Binpath/bwa index $Ref
+  #$Binpath/bwa index $Ref
+  bwa index $Ref
 fi
 
 mkdir -p $Outdir
@@ -43,7 +44,8 @@ date|tee -a $Log
 echo 'start surtr'|tee -a $Log
 time(
 python $Scriptpath/sweep_read.py -k 21 -N 4 -x 1e8 -P 10 $Ref $Seq $Outdir/$Prefix.sweep.nonrrna - | \
-$Binpath/bwa mem -t 1 -c 10000000 $Ref - | \
+#$Binpath/bwa mem -t 1 -c 10000000 $Ref - | \
+bwa mem -t 1 -c 10000000 $Ref - | \
 python $Scriptpath/parse_sam.py -o $Outdir -p $Prefix.parsesam -c 75 -i 50 -
 
 echo "                               " | tee -a $Log  # donot konw why have to
