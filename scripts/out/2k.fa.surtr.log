@@ -1,0 +1,52 @@
+Mon Dec 15 21:29:17 EST 2014
+start surtr
+
+PARAMETERS:
+ - kmer size =    21 		(-k)
+ - n tables =     4 		(-N)
+ - min tablesize = 1e+08 	(-x)
+
+Estimated memory usage is 5e+07 bytes (n_tables x min_tablesize / 8)
+--------
+fp rate estimated to be 0.000
+starting sweep.
+... 0 0
+Stats of the run:
+608.0 seqs per second
+0.1 Mbps per second
+[M::main_mem] read 1139 sequences (183293 bp)...
+[M::mem_process_seqs] Processed 1139 reads in 0.165 CPU sec, 0.189 real sec
+[main] Version: 0.7.7-r441
+[main] CMD: bwa mem -t 1 -c 10000000 ../db/rrna.fasta -
+[main] Real time: 5.325 sec; CPU: 0.534 sec
+                               
+                               
+surtr finished
+
+
+Mon Dec 15 21:30:16 EST 2014
+start surtr
+
+PARAMETERS:
+ - kmer size =    21 		(-k)
+ - n tables =     4 		(-N)
+ - min tablesize = 1e+08 	(-x)
+
+Estimated memory usage is 5e+07 bytes (n_tables x min_tablesize / 8)
+--------
+fp rate estimated to be 0.000
+starting sweep.
+... 0 0
+Stats of the run:
+3410.7 seqs per second
+0.5 Mbps per second
+[M::main_mem] read 1139 sequences (183293 bp)...
+[M::mem_process_seqs] Processed 1139 reads in 0.122 CPU sec, 0.125 real sec
+[main] Version: 0.7.7-r441
+[main] CMD: bwa mem -t 1 -c 10000000 ../db/rrna.fasta -
+[main] Real time: 0.856 sec; CPU: 0.440 sec
+                               
+                               
+surtr finished
+
+
