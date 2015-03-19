@@ -1,6 +1,7 @@
-<<<<<<< HEAD
 surtr
 =====
+
+Screen for or out target sequences in metagenome
 
 rrna search in shotgun metagenome
 
@@ -39,8 +40,3 @@ ls test/2k.test.out/
 Existing problems
 -----------------
 1) false positives from low complexity reads
-
-=======
-# surtr
-Screen for or out target sequences in metagenome
->>>>>>> b592544344e9bfb60d1a77ee56c87c8f65fe9ecd
