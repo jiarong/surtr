@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 surtr
 =====
 
@@ -39,3 +40,7 @@ Existing problems
 -----------------
 1) false positives from low complexity reads
 
+=======
+# surtr
+Screen for or out target sequences in metagenome
+>>>>>>> b592544344e9bfb60d1a77ee56c87c8f65fe9ecd
